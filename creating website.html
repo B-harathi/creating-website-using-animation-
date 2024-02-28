@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating webiste</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(./image/garden/botted.jpg);
+            background-size: cover;
+        }
+        .blue{
+            background-color: rgb(75, 2, 109);
+            height: 500px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .loder{
+            position: absolute;
+            margin-top: -550px;
+            background-color: aliceblue;
+            height: 100px;
+            width: fit-content;
+            justify-content: center;
+            padding-top: 30px;
+            padding: 35px 30px 50px 40px;
+            margin-left: 80px;
+            border-radius: 10px;
+
+        }
+        .loader{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            border: 5px solid black;
+            border-bottom-color:transparent ;
+            animation: rotation 1s linear infinite;
+            margin-top: -515px;
+            margin-left: 85px;
+
+        }
+        @keyframes rotation{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .top{
+            background-color: aliceblue;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 70px;
+            align-items: center;
+            display: flex;
+            height: 70px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .left{
+            display:flex;
+            position: absolute;
+            margin-left: 50px;
+            align-items: center;
+        }
+        .left img{
+            border-radius: 50%;
+        }
+        .right{
+            margin-left: 600px;
+            justify-content: center;
+        }
+        .right a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+        .icon{
+            display: flex;
+            flex-flow: row-reverse;
+            margin-left: 80px;
+        }
+        .icon i{
+            margin-left: 20px;
+            color: orangered;
+        }
+        .bg{
+            background: url(./image/garden/main.jpg);
+            background-size: cover;
+            margin-left: 150px;
+            margin-right: 150px;
+            height: 400px; 
+        }
+        .background{
+            margin-left: 50px;
+            position: absolute;
+            top: 350px;
+        }
+        .multi{
+            background: linear-gradient(skyblue,grey,black);
+            height: 100px;
+            width: 200px;
+
+        }
+
+        .but{
+            background-color:white;
+            position: absolute;
+            top: 300px;
+            padding: 20px 20px 20px 20px;
+            border-radius: 10px;
+            left: 1030px;
+            height: 300px;
+        }
+        .align{
+            border: 1px solid grey;
+            padding: 10px 10px;
+
+        }
+        .bh{
+            height: 70px;
+            width: 70px;
+            display: flex;
+            position: absolute;
+            top: 200px;
+            left: 130px;
+        }
+        .sub{
+            background-color: white;
+            position: absolute;
+            top: 650px;
+            height: 400px;
+            width: 1012px;
+        }
+        .two{
+            position: absolute;
+            left: 550px;
+            top: 100px;
+        }
+        .three{
+            position: absolute;
+            height: 220px;
+            width: 250px;
+            background-color: white;
+            left: 800px;
+            top: -30px;
+            padding-left: 25px;
+            padding-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 0px 3px black;
+        }
+    </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="blue"></div>
+        <div class="loder">
+            <h3>Creating Your website...</h3>
+        </div>
+        <div class="loader"></div>
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <img src="./image/garden/icon.jpg" alt="" height="40px" width="40px">&nbsp;&nbsp;
+                    <p style="color: green;"><hlo style="letter-spacing: 2px;">Hamilton Care</hlo><br><hi style="font-size: 13px;">Landscapes and gardens</hi></p> 
+                </div>
+                <div class="right">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                    <div class="icon">
+                        <i class="fa fa-facebook" ></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+            
+            </div>
+            <div class="bg">
+                <div class="background">
+                    <h1 style="color: aliceblue; font-family:;">The landscape of your<br>dreams is Possible</h1><br>
+                    <p style="font-size: 18px; color: aliceblue;">It is possible to foster outdoor spaces that are adaptable to a <br>changing climate, offer habitat to our native birds and insects, and <br>demand less of our natural resources all while looking sharp</p><br>
+                    <p style="background-color: orangered; color: aliceblue; width: fit-content; padding: 10px 10px; border-radius: 5px;">Book A free estimate</p>
+        
+                    </div>
+                    <div class="but">
+                        <h3>Button</h3><br>
+                        <label for="Label">Label</label><br>
+                        <input type="text" placeholder="Call Us" style="padding: 10px 10px; border-radius: 5px; color: black;"><br>
+                        <label for="Link">Link</label><br>
+                        <input type="text" placeholder="page  &nbsp;&nbsp;Contact" style="padding: 10px 10px; border-radius: 5px;"><br>
+                        <!-- <hi class="align"> page Contact<br></hi><br> -->
+                        <br><h4>Alignment </h4>
+                        <p class="bh"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25 " />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                          </svg>
+                        </p>
+                    </div>
+                    <div class="sub">
+                        <div class="one">
+                            <h2 style="margin-top: 100px; margin-left: 50px;">About Us</h2><br>
+                            <p style="margin-left: 50px; font-size: 15px;">Our experience, attention to details and knowledge guaranty a <br>beautiful garden. Our commitment to quality and customer service <br>guarantee your peace of mind.</p><br>
+                            <p style="border: 2px solid black; width: fit-content; margin-left: 50px; padding: 10px 10px; border-radius: 5px;">Learn more</p>
+                        </div>
+                        <div class="two">
+                            <img src="./image/garden/div.jpg" alt="" height="250px" width="400px">
+                        </div>
+                        <div class="three">
+                            <h4>Background</h4>
+                            <h2>#042d2d</h2>
+                            <div class="multi"></div>
+                            <!-- <img src="./image/garden/color.png" alt="" height="100px" width="200px"> -->
+                            <img src="./image/garden/line.jpg" alt="" height="10px" width="200px">
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
